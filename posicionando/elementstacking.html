@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empilhamento de elementos z-index</title>
+    <style>
+
+        /* É o empilhamento de elementos. Podemos usar o z-index para determinar a ordem da posição do elemento. Quanto maior o z-index, mais "acima" vai aparecer o elemento. */
+
+
+          .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 8px;
+        }
+        
+        .box1 {
+            background-color:red;
+            position:absolute;
+            left:5px;
+            top:5px;
+            z-index: 1;
+          
+        }
+
+        .box2{
+            background-color: green;
+            position:absolute;
+            left: 10px;
+            top: 10px;
+            z-index:2;
+
+        }
+
+        .box3{
+            background-color: blue;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            z-index:  3;
+        }
+    </style>
+</head>
+<body>
+ 
+    
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+
+
+</body>
+</html>

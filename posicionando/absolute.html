@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>     
+    .box{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+    
+    main{
+        margin-top: 200px;
+        position: relative;
+    } 
+
+    .box1 {
+        background-color:red;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        /** o posicionamento absoluto torna o posicionamento do elemento absoluto ao seu pai, no caso o padrão pai é a página inteira **/
+    }
+
+    .box2{
+        background-color: green;
+        position: absolute;
+        top: 80px;
+        /** nesse caso o posicionamento da box 2 está absoluto dentro de <main> **/
+    }
+
+    .box3{
+        background-color: blue;
+        position: absolute;
+        left: 50px;
+        top: -79px;
+        
+    }</style>
+</head>
+
+<body>
+    <div class="box1 box"></div>
+    <main>
+        
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </main>
+
+</body>
+</html>
