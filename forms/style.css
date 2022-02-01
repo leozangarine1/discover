@@ -1,6 +1,7 @@
 main {
     border: 5px solid black;
     padding: 10px;
+    margin-bottom: 20px;
   }
 
   p {

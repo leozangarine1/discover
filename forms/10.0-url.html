@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h3><code>&ltinput type="url" /&gt</code></h3>
+
+        <p>- Espera que o usuário digite uma url</p>
+        <p>Irá validar se o valor digitado é uma URL</p>
+
+        <h3># Atributos</h3>
+        <h3><code>- placeholder</code></h3>
+        <h3><code>- readonly / disabled</code></h3>h3
+        <h3><code>- value</code></h3>
+        <h3><code>- required</code></h3>
+        <h3><code>- minlength / maxlength</code></p>
+        <p>* o mínimo e/ou máximo valor que o campo irá conter</p>
+        <h3><code>- size</code></h3>
+        <p>* valor numérico que indica quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário </p>
+        <h3><code>- pattern</code></h3>
+        <p>* Uso de expressão regular para validar o campo</p>
+        <p>* exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br</p>
+        <p>* pattern="[.+@rocketseat\.com\.br]"</p>
+
+
+
+    </main>
+    <datalist id="urlsdata">
+        <option>http://meusite.com.br</option>
+        <option>https://meusite.com.br</option>
+    </datalist>
+    <form action="">
+        <input type="url" 
+        placeholder="http://example.com.br"
+        required
+        pattern=".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos"
+        list="urlsdata"
+        spellcheck="false">
+        <button type="submit">Enviar</button>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
