@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist</title>
+    <style>
+      main {
+        border: 5px solid black;
+        padding: 10px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <pre>
+        <code>
+          <h2># &ltdatalist&gt</h2>
+        </code>
+      </pre>
+      <p>- Lista de valores como sugestão a uma tag &ltinput&gt.</p>
+      <p>-Valores sugestivos e não obrigatórios</p>
+      <p>
+        Usuário poderão selecionar um dos vlaores, ou colocar um valor diferente
+        da sugestão.
+      </p>
+
+      <h2># list</h2>
+      <p>
+        - Recebe como valor o id de um &ltdatalist&gt residente no mesmo
+        documento.
+      </p>
+
+      <h2># Tipos de input suportados</h2>
+
+      <p>
+        - text, search, url, tel, e-mail, date, month, week, time,
+        datetime-local, number, range e color.
+      </p>
+
+      <p>
+        * Valores de datalist que não são compatíveis com o tipo do &ltinput&gt
+        não serão apresentado.
+      </p>
+
+      <h2># Tipos de input não suportados (conforme especificação)</h2>
+
+      <p>
+        - hidden, password, checkbox, radio, file, ou qualquer tipo de button
+      </p>
+
+      <h2># User Agent</h2>
+      <p>Verificar a compatibilidade com o browser https://caniuse.com</p>
+    </main>
+    <input type="text" list="fruitsdata" placeholder="Escolha uma fruta" />
+
+    <datalist id="fruitsdata">
+      <option>apple</option>
+      <option>banana</option>
+      <option>mango</option>
+      <option>orange</option>
+      <option>cherry</option>
+    </datalist>
+
+    <datalist id="colorsdata">
+      <option>#ff0000</option>
+      <option>#00ff00</option>
+    </datalist>
+    <input type="color" list="colorsdata" />
+  </body>
+</html>
