@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1><code>&ltinput type="email" /&gt</code></h1>
+
+      <p>- Espera que o usuário digite um e-mail</p>
+      <p>- Irá validar se o valo digitado é um email</p>
+
+      <h3># Atributos</h3>
+      <h3><code>- placeholder</code></p>
+      <h3><code>- readonly / disabled</code></h3>
+      <h3><code>- value</code><h3>
+
+      <h3><code>- required</code></h3>
+
+      <h3><code>- multiple</code></h3>
+      <p>* o campo irá receber 1 ou mais emails, separado por vírgulas</p>
+
+      <h3><code>- minlenght / maxlength</code></h3>
+      <p>* o mínimo e/ou máximo valor que um campo irá conter</p>
+
+      <h3><code>- size</code></h3>
+        <p>* valor numérico que indica quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário </p>
+
+      <h3><code>- pattern</code></h3>
+        <p>* Uso de expressão regular para validar o campo</p>
+        <p>* exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br</p>
+        <p>* pattern="[.+@rocketseat\.com\.br]"</p>
+
+      <h3><code>- list</code></h3>
+        <p>* o id de uma tag <code>&ltdatalist&gt</code> que está no mesmo documento</p>
+        <p>* <code>&ltdatalist&gt</code> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis</p>
+        <p>* os valores do <code>&ltdatalista&gt</code>que não forem compatíveis com o campo, não serão apresentados como sugestão</p>
+    </main>
+
+    <form action="">
+        <datalist id="emailslist">
+            <option>leo@rocketseat.com.br</option>
+        </datalist>
+        <input type="email"
+        pattern=".+@rocketseat\.com\.br"
+        title="Somente emails @rocketseat.com.br serão aceitos"
+        list="emailslist"
+        value="Digite seu e-mail"
+        >
+        <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
