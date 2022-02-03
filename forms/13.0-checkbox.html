@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1><code>&ltinput type="checkbox" /&gt</code></h1>
+
+      <p>- Caixas que podem ser marcadas</p>
+      <p>- Selecionar um valor para ser enviado</p>
+      <p>- Se não selecionado, não será enviado nenhum dado</p>
+
+      <h2># Atributos</h2>
+      <h3>- globais</h3>
+      <h3><code>- value</code></h3>
+      <p>* valor que aquele campo contém</p>
+      <p>* se não estiver presente, o padrão é 'on'</p>
+      <h3><code>- checked</code></h3>
+      <p>* para deixar o campo marcado por padrão</p>
+    </main>
+    <fieldset>
+      <legend>Choose your interests</legend>
+      <div>
+        <input
+          type="checkbox"
+          name="interest"
+          id="coding"
+          value="coding"
+          checked
+        />
+        <label for="coding">Coding</label>
+      </div>
+      <div>
+        <input type="checkbox" name="interest" id="music" value="music" />
+        <label for="music">Music</label>
+      </div>
+    </fieldset>
+  </body>
+</html>

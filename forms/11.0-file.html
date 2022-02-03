@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1><pre><code>&ltinput type="file" /&gt</code></pre></h1>
+
+        <p>- Usuário poderá escolher 1 ou mais arquivos para enviar no formulário</p>
+
+        <h2># Atributos</h2>
+        <h3><code>- value</code></h3>
+        <p>- contém o arquivo a ser enviado</p>
+        <h3><pre><code>- accept</code></pre></h3>
+        <p>- descreve que tipos de arquivos serão aceitos</p>
+        <p>- exemplo: .doc, .docx, .pdf, audio/*, image/png, png</p>
+        <h3><pre><code>- files</code></pre></h3>
+        <p>- a lista de arquivo ou arquivos</p>
+        <h3><pre><code>- multiple</code></pre></h3>
+        <p>- permite o envio de múltiplos arquivos</p>
+
+        <h2># Envio dos arquivos</h2>
+        <p>Para envio dos arquivos o formulário deverá utilizar o método <code>POST</code> e o atributo enctype como "multipart/form-data"</p>
+    </main>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="" id="">
+    </form>
+
+</body>
+</html>

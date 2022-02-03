@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>&ltinput type="color" /&gt</h1>
+      <p>- Interface para selecionar cor</p>
+      <p>- Color picker</p>
+
+      <h2># Atributos</h2>
+      <h3><code>- value: RGB</code></h3>
+      <p>Se inválido, o preto será exibido</p>
+      <h3><code>- list</code></h3>
+      <p>
+        * o id de uma tag <code>&ltdatalist&gt</code> que está no mesmo
+        documento
+      </p>
+      <p>
+        * <code>&ltdatalist&gt</code> irá conter uma lista de valores pré
+        definidos a fim de que o usuário escolha uma cor
+      </p>
+      <p>
+        * Os valores do <code>&ltdatalist&gt</code> que não forem compatíveis
+        mostrará a cor preta
+      </p>
+    </main>
+    <datalist id="colorsdata">
+        <option>#0000ff</option>
+    </datalist>
+    <input type="color" list="colorsdata">
+  </body>
+</html>

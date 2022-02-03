@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>&ltinput type="radio"&gt</h1>
+      <p>- Projetado para selecionar uma única opção de um grupo de opções</p>
+
+      <h2># ATRIBUTOS ESSENCIAIS</h2>
+      <h3><code>- checked</code></h3>
+      <p>* indica que o campo foi marcado</p>
+      <h3><code>- value</code></h3>
+      <p>* valor que aquele campo contém</p>
+    </main>
+    <fieldset>
+      <legend>Bora tomar um café</legend>
+
+      <label for="yep">Sim</label>
+      <input type="radio" name="coffee" id="yep" value="yes" />
+
+      <label for="nono">Não</label>
+      <input type="radio" id="nono" name="coffee" value="no" checked />
+    </fieldset>
+  </body>
+</html>
