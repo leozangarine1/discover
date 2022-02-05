@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>String</h2>
+      <br />
+      <h2>* Cadeia de Caractéres</h2>
+      <br />
+
+      <h2>"" / '' // aspas duplas e aspas simples</h2>
+      <p>
+        * Podemos colocar nossas strings entre aspas duplas ou simples. Para o
+        JavaScript, não há diferença, já que ele considera as duas formas de
+        declaração válidas. Mas, atenção, essa regra pode não se aplicar a
+        outras linguagens. No Java ou C#, por exemplo, aspas simples são usadas
+        para definir um caractere.
+      </p>
+      <br />
+      <p>
+        Em alguns momentos, a string poderá ser um texto que contém aspas.
+        Nesses casos, é preciso combinar a utilização das aspas simples com
+        aspas duplas e vice-versa, porque um texto como: “Ela disse: “Adeus””,
+        não funciona corretamente.
+      </p>
+
+      <br />
+
+      <h2>`` // Template Literals</h2>
+
+      <br />
+
+      <p>
+        * No entanto, os template literals possuem uma função clara, realizar a
+        interpolação de strings para tornar o código mais legível e evitar o
+        excesso de concatenação.
+      </p>
+      <br />
+    </div>
+    <div class="card2">
+      <h2>Exemplo para evitar erro na utilização das aspas:</h2>
+      <br />
+      <p><code>console.log('Ela disse: “Adeus!”')</code></p>
+      <br />
+      <p><code>console.log(“Ela disse: 'Adeus!' ”)</code></p>
+      <br />
+      <br />
+      <h2>Exemplo de concatenação:</h2>
+      <br />
+      <p>
+        * Quando falamos em concatenar strings, quer dizer que vamos juntar duas
+        ou mais strings e formar uma nova. Observe o exemplo abaixo:
+      </p>
+      <br />
+      <p>
+        <code
+          >let nome = "André"<br />
+          let sobreNome ="Silva"<br />
+          let nomeCompleto = "Meu nome completo é : " + nome + sobreNome
+        </code>
+      </p>
+      <br />
+      Para concatenar as strings nome e sobreNome com a string de texto que é o
+      valor de nomeCompleto, usamos o operador de adição (+). Podemos usar
+      também +=, como no exemplo abaixo:
+      <br />
+      <br />
+      <p>
+        <code
+          >let nome = "André"<br />
+          let saudacoes = "Seja bem-vindo "<br />
+          saudacoes += nome</code
+        >
+      </p>
+      <br />
+
+      <h2>Interpolando string(template strings)</h2>
+      <br />
+      <p>
+        A interpolação de strings é um recurso bem interessante, presente em
+        diversas linguagens. No JavaScript, é uma alternativa mais prática para
+        manipular string sem a necessidade de fazer concatenação, porque para
+        textos maiores, concatenar pode ser um pouco trabalhoso. Usando as
+        chamadas template strings ou templates literais, a pessoa desenvolvedora
+        consegue ter uma flexibilidade maior no trabalho com strings, além de
+        facilitar a escrita e leitura do código. Retomando o exemplo da mensagem
+        de boas vindas, veja abaixo a utilização de template strings:
+      </p>
+      <br />
+      <p>
+        <code
+          >let nome = "André"<br />
+          let saudacoes =`Seja bem-vindo ${nome}`</code
+        >
+      </p>
+    </div>
+  </body>
+</html>
