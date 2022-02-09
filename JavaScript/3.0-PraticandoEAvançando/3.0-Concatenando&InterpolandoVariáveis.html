@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>concatenando e interpolando variáveis</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Concatenando e interpolando variáveis</h2>
+      <p>
+        É possível concatenar strings com o operador +, por exemplo:<code>
+          console.log('o ' + name + ' tem ' + age + ' anos.')</code
+        >
+        desta maneira as variáveis serão convertidas em texto e o que será
+        mostrado será um texto com o nome e a idade que foram estabelecidas no
+        código. <br />
+        <br />
+        Uma outra maneira de escrever um texto com variáveis é por meio da
+        interpolação com template literals, usando crase para o texto e
+        <code>${}</code> para denotar uma variável, por exemplo
+        <code>console.log(O ${name} tem ${age}</code> anos.) o resultado deste
+        comando será o mesmo texto do anterior.
+      </p>
+    </div>
+    <div class="card2">
+      <p>Para realizar a concatenação e a interpolação temos as seguintes opções:</p>
+      <p><pre><code>
+
+        //concatenando os valores
+        let name, age, isHuman
+        name = 'Leonardo'
+        age = 20
+        isHuman = true
+
+        //concatenando valores
+        console.log('o ' + name + ' tem ' + age + ' anos.' )
+
+        //interpolando valores
+        console.log(`o ${name} tem ${age} anos.`)
+
+
+      </code></pre></p>
+    </div>
+  </body>
+</html>
