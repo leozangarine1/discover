@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="card">
+        <h2># Scope</h2>
+        <p>* Escopo determina a visibilidade de alguma variável no JS</p>
+        <br>
+        <br>
+        <h2># Block Statement</h2>
+        <p>- Cada bloco é formado pelas chaves de início <b>{</b> e fim <b>}</b>, o bloco, também criará um novo escopo. Chamamos de <b>block-scoped</b></p>
+    </div>
+    <div class="card2">
+        <pre>
+            <code>
+                // var é global e, também local
+            
+                console.log(' > existe x antes do bloco? ', x)
+            
+                {
+                    var x = 0
+                }
+            
+                console.log(' > existe x depois do bloco? ', x)
+            
+                //hoisting
+            </code>
+        </pre>
+        <p>Resultado do console:<br > > existe x antes do bloco?  undefined  </p> 
+        <p> > existe x depois do bloco?  0</p>
+    </div>
+    <div class="card2">
+        <pre><code>
+           //const e let são locais e só funcionam no escopo onde foi criada
+
+           let y = 2 //escopo global
+            
+           {
+               let y = 0 // escopo de bloco
+               console.log (y)
+           }
+        
+           console.log (y)
+        </code></pre>
+       <pre> <p>Resultado do console: 
+           0 // console foi printado no bloco
+           2 // console pegou o valor de y na escala global
+        <pre>
+    </div>
+</body>
+</html>
