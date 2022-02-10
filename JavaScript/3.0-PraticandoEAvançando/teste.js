@@ -1,11 +1,8 @@
+const test = {
+    name: 'Leo',
+    age: 20,
+    stars: 9.9,
+    isSubscribed: true
+}
 
-
-let name, age, isHuman
-name = 'Leonardo'
-age = 20
-isHuman = true
-//concatenação
-console.log('o ' + name + ' tem ' + age + ' anos.' )
-
-//interpolando valores
-console.log(`o ${name} tem ${age} anos.`)
+console.log(test.name)
