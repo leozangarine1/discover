@@ -41,9 +41,66 @@
             stars: 9.9,
             isSubscribed: true
         }
+      </code></pre></p> <br>
 
+      <p>// 4. A variável student abaixo é de que tipo de dados?</p> <br>
+      <p><code>let student = {}</code></p>
+      <p><code>console.log(typeof student) = object</code></p> <br>
+      <p>// 4.1 Atribua a ela as mesmas propriedades e valores do exercísio 3.</p> <br>
+      <p><pre><code>
+        let student = {
+          name: 'Leo',
+          age: 20,
+          stars: 9.9,
+          isSubscribed: true,
+          weight: 71.5
 
+      }
+      </code></pre></p> <br>
+      <p>// 4.2 Mostre no console a seguinte mensagem:</p>
+      <p>&ltname&gt de idade &ltage&gt pesa &ltweight&gt kg.</p> 
+      <p><pre><code>
+
+        console.log(`${student.name} de idade ${student.age} pesa ${student.weight}kg`)
+      </code></pre></p> <br>
+      <p>// 5. Declare uma variável do tipo Array, de nome student e atribua a ela nenhum valor, ou seja somente o Array vazio</p>
+      <p><pre><code>
+        let students = []
       </code></pre></p>
+    <p>// 6. Reatribua o valor para a variável acima, colocando dentro dela o objeto student da questão 4. (Não copiar e colar o objeto, mas  usar o objeto criado e inserir ele no Array)</p>
+    <p><pre><code>
+      students = [
+      student]
+    </code></pre></p> <br>
+    <p>// 7. Qual o valor da posição zero do Array acima</p>
+    <p><pre><code>
+      console.log(students[0]) 
+      
+      { name: 'Leo', age: 20, stars: 9.9, isSubscribed: true, weight: 71.5 }
+    </code></pre></p> <br>
+    <p>// 8. Crie um novo student e coloque na posião 1 do Array students</p>
+    <p><pre><code>
+      const lahana = {
+        name: "Lahana",
+        age: 21,
+        weight: 52,
+        isSubscribed: true
+      }
+
+      students = [
+      student,
+      lahana
+      ]
+
+    </code></pre></p>
+    <p>// 9. Sem rodar o código responda qual é a resposta do código abaixo e por que? Após sua resposta, rode o código e veja se você acertou.
+      <pre><code>
+        console.log(a)
+        let a = 1
+      </code></pre>
+    </p>
+    <p>Resultado será um erro, pois <code>"a"</code> não havia sido alocado na memória quando foi chamado, JavaScript é lido de cima para baixo e no caso, a variável <code>"a"</code> foi alocada na memória após ter sido chamada.</p>
+    <p>Se a variável fosse um <code>"var"</code>, haveria um hoisting, tornando o resultado um undefined, pois o var estaria na memória no entanto não teria valor</p>
 
     </div>
   </body>

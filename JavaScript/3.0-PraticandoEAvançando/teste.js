@@ -1,8 +1,8 @@
-const test = {
-    name: 'Leo',
-    age: 20,
-    stars: 9.9,
-    isSubscribed: true
-}
+b();
+console.log(a);
 
-console.log(test.name)
+var a = 'Hello World!';
+
+function b() {
+    console.log('Called b!');
+}
