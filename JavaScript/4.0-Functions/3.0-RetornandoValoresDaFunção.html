@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retornando valores dentro da função</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Retornando valores dentro da função</h2>
+      <p>
+        Para passar valores de dentro da função para o resto do código, usa-se a
+        palavra reservada return seguida do valor à ser retornado, parando assim
+        a execução da função e mandando o valor para onde a função foi chamada.
+      </p>
+    </div>
+    <div class="card2">
+        <pre><code>
+
+            const sum = function(number1, number2){
+                total = number1 + number2
+                return total
+            }
+
+            let number1 = 3
+            let number2 = 4
+
+            console.log(`o número 1 é ${number1}`)
+            console.log(`o número 2 é ${number2}`)
+            console.log(`a soma é ${sum(number1, number2)}`)
+
+            ou 
+
+            const sum = function(number1, number2){
+                total = number1 + number2
+                return total
+              }
+              
+            console.log(`a soma é ${sum(3,4)}`)
+
+            em ambos os resultado a soma é 7
+
+
+
+
+
+
+        </code></pre>
+
+
+
+
+    </div>
+
+  </body>
+</html>

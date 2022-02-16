@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Hoisting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Function Hoisting</h2>
+      <p>
+        JavaScript possui function hoisting, permitindo que uma função seja
+        declarada depois de ser utilizada, pois faz algo similar a elevar no
+        código declarações de funções. Porém isso não acontece dentro de
+        variáveis.
+      </p>
+    </div>
+    <div class="card2">
+      <pre><code>
+            // function hoisting
+
+                sayMyName()
+
+               function sayMyName() {
+                    console.log('Leo')
+               } 
+               
+               console : Leo
+               
+            // isso ocorre pois o JavaScript realiza a
+               elevação das funções no código das declarações.
+            --------------------------------------------------
+
+            sayMyName()
+
+            var sayMyName = function sayMyName(){
+                console.log('Leo')
+            }
+
+            console : error
+
+            // Isso ocorrerá pois com a variável não ocorre o hoisting apropriadamente,
+               mesmo a variável sendo uma função, ao ocorrer o hoisting
+               do var a variável sobe como undefined e não com a execução
+               da função - ocasionando o erro.
+
+
+
+        </code></pre>
+    </div>
+  </body>
+</html>

@@ -1,10 +1,7 @@
-// function expression
-            // function anonymous
-            
-            // parâmetros (parameter)
-            
-            const sum = function(number1, number2) {
-              console.log(number1 + number2)
-          }
+ // arrow function
 
-          sum(9, 10) // arguments - argumentos
+ const sayMyName = (name) => {
+    console.log(name)
+}
+
+sayMyName('Leo')
