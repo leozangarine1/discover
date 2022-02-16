@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções construtoras</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Funções construtoras</h2>
+      <p>
+        Funções construtoras são utilizadas para criar novos objetos e
+        geralmente tem a sua primeira letra maiúscula, todos com as mesmas
+        características que são criadas na função, usando a palavra reservada
+        this para se referir ao objeto sendo criado
+      </p>
+    </div>
+    <div class="card2">
+        <pre><code>
+            function Person(name) {
+                this.name = name
+                this.walk = function(){
+                    return this.name + " está andando"
+                }
+            }
+        
+            const leo = new Person('Leo')
+            const lahana = new Person('Lahana')
+            
+            console.log(leo.walk())
+            console.log(lahana.walk())
+
+            console:
+            Leo está andando
+            Lahana está andando
+        </code></pre>
+    </div>
+  </body>
+</html>
