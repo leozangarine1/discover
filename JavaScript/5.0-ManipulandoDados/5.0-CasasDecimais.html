@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casas decimais</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Casas decimais</h2>
+      <p>
+        Para determinar uma quantia de casas decimais de um número pode-se usar
+        o método <code>toFixed() </code>colocando como argumento quantas casas
+        decimais o número terá. Para mudar a formatação do número de separado
+        por ponto para separado por vírgula é possível usar o método<code>
+          replace(".", ",")</code
+        >. O resultado final será do tipo string, e a conversão para o tipo
+        número não será possível por que a vírgula não é considerada parte de um
+        número.
+      </p>
+    </div>
+    <div class="card2">
+      <pre><code>
+            // Manipualndo Strings e Números
+
+            // Transformar um número quebrado com 2 casas decimais e trocar ponto por vírgula
+
+            let number = 178.998898565
+
+            console.log(number.toFixed(2).replace(".", ","))
+        </code></pre>
+    </div>
+  </body>
+</html>

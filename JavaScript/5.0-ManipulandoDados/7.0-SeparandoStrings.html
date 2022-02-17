@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Separando Strings</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Separando Strings</h2>
+      <p>
+        Para separar um texto por espaços, pode-se usar o método
+        <code>split(" ")</code>, que transforma o texto em um array de strings
+        baseado no argumento, que no caso são os espaços. Para juntar esse array
+        é possível usar o método <code>join(" ")</code>, que juntaria essas
+        palavras sem nenhum separador, porém colocando um argumento, no caso um
+        underscore <code>( join("_") )</code> as palavras são juntadas com o
+        argumento de separador.
+      </p>
+    </div>
+    <div class="card2">
+        <pre><code>
+            // Manipulando Strings e Arrays
+
+            // Separe um texto que contém espaços, em um novo array onde cada texto <br>
+            é uma posição do array. Depois disso transforme o array em um texto e onde <br>            eram espaços, coloque _
+
+            let phrase = "Eu quero viver a vida!"
+            
+            let myArray = phrase.split(" ")
+
+            let phraseWithUnderscore = myArray.join("_")
+            
+            console.log(phraseWithUnderscore.toLowerCase())
+        </code></pre>
+    </div>
+
+  </body>
+</html>
