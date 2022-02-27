@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressões e Operadores</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Expressões e Operadores</h2>
+      <p>Nas próximas aulas, falaremos sobre expressões e operadores.</p>
+    </div>
+    <div class="card2">
+      <p>
+        Expresssões são bem tranquilas, porque expressões são qualquer linha de
+        código que resolve alguma coisa no JavaScript, um exemplo é a expressão:
+      </p>
+      <pre><code>
+            let number
+        </code></pre>
+      <p>
+        Isso é uma expressão, já que estamos declarando uma váriavel, nesse caso
+        com o valor de undefined. Toda expressão do Javascript pode ou não
+        terminar com ; (ponto e vírgula), o final de uma expressão é
+        facultativa, mas em algumas outras linguagens é obrigatório o uso de ;
+        (ponto e vírgula).
+      </p> 
+      <br>
+      <p>
+        Em alguns casos é necessário o uso de ; (ponto e vírgula), como numa
+        função auto-executável, é um dos poucos casos onde faz falta, e é em um
+        cenário como o seguinte:
+      </p>
+      <pre><code>
+        let number = 1
+
+        (function(){
+          console.log('alo')
+        })()
+      </code></pre>
+      <p>
+        Caso você tente executar esse código, ele vai tentar atribuir essa
+        função ao valor 1, onde o Javascript vai tentar executar o 1, passar uma
+        função como argumento, e o 1 vai receber uma outra função. Um dos
+        pouquíssimos casos onde o ; (ponto e vírgula) faz falta.
+      </p>
+      <br />
+
+      <p>
+        Veremos também sobre operadores, nesse exemplo temos o binário, unário e
+        ternário.
+      </p>
+      <pre><code>
+        /* unário */
+        let number = 1
+        
+        console.log(++number)
+        
+        /* binário */
+        let number = 1
+        
+        console.log(number + 1)
+        
+        /* ternário */
+        console.log(true ? 'alo' : 'nada')
+      </code></pre>
+      <p>
+        Como você pode observar, temos no unário um elemento, no binário dois
+        elementos e no ternário três elementos.
+      </p>
+    </div>
+  </body>
+</html>
