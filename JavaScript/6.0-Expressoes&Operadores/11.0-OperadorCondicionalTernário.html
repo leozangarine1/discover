@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operador condicional ternário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Operador condicional ternário</h2>
+      <p>
+        Os operadores ternários, conhecidos como operadores de condição, como o
+        nome sugere, são dependentes de condições e podem entregar valores
+        diferentes com base nelas.
+      </p>
+      <p>
+        Funciona da seguinte forma:
+        <br />
+        <br />
+        <code>condição ? valor : valor2</code>
+      </p>
+      <p>Exemplo de uso:</p>
+    </div>
+    <div class="card2">
+        <pre><code>
+        // Café da manhã top
+        let pao = false
+        let queijo = false
+
+        const niceBreakfast = pao || queijo ? 'Café top' : 'Café ruim'
+
+        console.log(niceBreakfast)
+         = Café ruim
+
+        // Maior que 18
+        let age = 16
+
+        const canDrive = age >= 18 ? 'Can drive' : "Can't drive"
+
+        console.log(canDrive)
+         = Can't drive
+        </code></pre>
+    </div>
+  </body>
+</html>

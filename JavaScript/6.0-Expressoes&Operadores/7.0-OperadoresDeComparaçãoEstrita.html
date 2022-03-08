@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Operadores de comparação estritamente igual e estritamente diferente
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>
+        Operadores de comparação estritamente igual e estritamente diferente
+      </h2>
+      <p>
+        Os Operadores de comparação estritos comparam o valor e o tipo do objeto
+      </p>
+    </div>
+    <div class="card2">
+      <pre><code>
+            let one = 1
+            let two = 2
+
+            // === estritamente igual a
+            
+            console.log( one === "1") 
+            false, pois 1 é um number e "1" é uma string
+
+            console.log( one === 1)
+            true, pois ambos são tipo number
+
+            // !== estritamente diferente de
+
+            console.log( two !== "2")
+            true, pois 2 é number e "2" é uma string, logo, são diferentes.
+
+            console.log( two !== 2) false, pois ambos são tipo number, logo, são iguais.
+        </code></pre>
+    </div>
+  </body>
+</html>
