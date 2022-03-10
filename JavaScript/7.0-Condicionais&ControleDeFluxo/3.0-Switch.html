@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="card">
+        <h2>Switch</h2>
+        <p>Vamos usar uma declaração chamada switch, que tem um papel muito similar ao if e ao else if, vistos na aula passada, porém a estrutura é bem diferente, e aqui veremos essa estrutura.</p>
+        <br> <br>
+        <pre><code>
+let expression = ''
+
+switch (expression) { // puxa a expressão para o switch
+    case'a': // confere se o valor da expressão é o correto
+    console.log('a')
+    break // para a execucação do switch apenas se verdadeiro
+
+    case 'b':
+    console.log('b')
+    break
+
+default: 
+// caso nenhum valor seja o correto, realizará a //Instrução dentro de si
+
+
+    console.log('default')
+    break
+}
+        </code></pre>
+    </div>
+    <div class="card2">
+        <pre><code>
+    function calculate(number1, operator, number2) {
+        let result = 0;
+
+        switch (operator) {
+        case '+':
+            result = number1 + number2
+            break
+        case '-':
+            result = number1 - number2
+            break
+        case '*':
+            result = number1 * number2
+            break
+        case '/':
+            result = number1 / number2
+            break
+        default:
+            console.log('Não implementado')
+            break
+        }
+        return result
+    }
+    console.log(calculate)4, '%', 8)
+        </code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If e Else</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>If e Else</h2>
+      <p>
+        Vamos falar sobre if e o else, que ajudam nossa aplicação a tomar
+        diferentes caminhos, ouseja, alteram o fluxo da nossa aplicação.
+      </p>
+      <p>Sua sintaxe é simples, como pode ver a seguir:</p>
+    </div>
+    <div class="card2">
+      <pre><code>
+            // if... else
+
+            let temperature = 36.9
+          
+            let highTemperature = temperature >= 37.5
+          
+            let mediumTemperature = temperature < 37.5 && temperature >= 37
+
+            if(highTemperature) {
+                console.log('Febre alta')
+            } else if(mediumTemperature) {
+                console.log('Febre moderada')
+            } else {
+                console.log('Saudável')
+            }
+        </code></pre>
+    </div>
+  </body>
+</html>

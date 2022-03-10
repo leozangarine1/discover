@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throw e Try/Catch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Throw e Try/Catch</h2>
+      <p>
+        Nesta aula veremos sobre o throw e try/catch.São parte do controle de
+        fluxo da aplicação.
+      </p>
+      <p>
+        Throw em inglês significa lançar, disparar, catch quer dizer pegar e try
+        tentar.
+      </p>
+      <p>
+        Isso significa que vamos tentar executar um bloco de código, e se der
+        algum erro, será disparado e capturado na nossa aplicação.
+      </p>
+      <p>
+        Supunhamos que haja uma função que dispare um erro caso não seja passado
+        um parâmetro dessa função.
+      </p>
+    </div>
+    <div class="card2">
+      <pre><code>
+            function sayMyName(name = '') {
+                if (name === '') {
+                    throw 'Nome é obrigatório'
+                }
+                    console.log(name)
+            }
+        </code>
+    <br>
+<p>Nesse caso, se o nome vier vazio, será disparada uma mensagem.</p>
+        <p>
+Precisamos agora usar o try/catch para capturarmos esse erro, 
+caso contrário, ele irá encerrar nossa aplicação, e nós
+ o faremos da seguinte maneira:</p>
+        <code>
+            try {
+                sayMyName()
+            } catch(e) {
+                console.log(e)
+            }
+
+            console.log('após ao try/catch')
+        </code>
+            <br><p>
+o try irá executar a função, enquanto o catch
+vai capturar o erro e atribuir à variável e, que
+só existe dentro do catch. Após isso, mesmo com o erro,
+nossa aplicação não será interrompida por completo.
+            </p>
+       
+    </pre>
+    </div>
+  </body>
+</html>

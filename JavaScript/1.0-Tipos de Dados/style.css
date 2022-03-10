@@ -111,15 +111,20 @@ body {
 }
 
 .card p {
- 
-  
   letter-spacing: 0.5px;
   margin-bottom: 15px;
 }
 
 .card h2 {
-  
   font-family: "Archivo Black", "Archivo", sans-serif;
   font-weight: normal;
   margin-bottom: 10px;
 }
+
+.card li {
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+code {font-size: 18px;}
