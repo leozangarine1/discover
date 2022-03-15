@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notas escolares</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,20 +14,47 @@
       href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-       <h2>Desafio</h2>
-        <p>
-            Crie um algoritmo que transforme as notas do sistema
-            numérico para sistema de notas em caracteres tipo A B C
-            
-            * de 90 para cima -   A
-            * entre 80 - 89   -   B
-            * entre 70 - 79   -   C
-            * entre 60 - 69   -   D
-            * menor que 60    -   F
-        </p>
+      <h2>Desafio</h2>
+      <p>
+        Crie um algoritmo que transforme as notas do sistema numérico para
+        sistema de notas em caracteres tipo A B C * de 90 para cima - A * entre
+        80 - 89 - B * entre 70 - 79 - C * entre 60 - 69 - D * menor que 60 - F
+      </p>
     </div>
-</body>
+    <div class="card2">
+      <pre><code>
+
+function getScore(notaNum){
+let nota = ""
+
+if(notaNum >= 90 && notaNum <= 100){
+    nota = 'A'
+} else if(notaNum >= 80 && notaNum <= 89) {
+    nota = 'B'
+} else if(notaNum >= 70 && notaNum <= 79) {
+    nota = 'C'
+} else if(notaNum >= 60 && notaNum <= 69) {
+    nota = 'D'
+} else if(notaNum < 60 && notaNum >= 0) {
+    nota = 'F'
+} else {
+    console.log('Nota inválida')
+}
+
+console.log(nota)
+}
+
+getScore(90)  // A
+getScore(52) // F
+getScore(877) // Nota inválida
+getScore(36)  // F
+getScore(78)  // C
+getScore(89) // B
+
+      </code></pre>
+    </div>
+  </body>
 </html>
