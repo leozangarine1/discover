@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="card">
+        <h2>For of</h2>
+        <p>O loop for...of percorre objetos iterativos (incluindo Array, Map, Set, o objeto arguments e assim por diante), chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto.</p>
+        <p>Sintaxe:</p>
+        <p><pre><code>
+            for (variavel of iteravel) {
+                declaração
+            }
+        </code></pre></p>
+        <p>variável: A cada iteração, um valor de uma propriedade diferente é atribuído à variável.</p>
+        <p>iterável: Objeto cujos atributos serão iterados</p>
+    </div>
+    <div class="card2">
+        <h2>Exemplos:</h2>
+        <br>
+        <h3>Iterando um <code>Array</code></h3>
+        <pre><code>
+            let iterable = [10, 20, 30];
+
+            for (let value of iterable) {
+                console.log(value);
+            }
+            // 10
+            // 20
+            // 30
+            <hr>
+        </code></pre>
+        <h3>Iterando sobre uma <code>String</code></h3>
+        <pre><code>
+            let iterable2 = "boo";
+
+            for (let value2 of iterable2) {
+                console.log(value2)
+            }
+            // "b"
+            // "o"
+            // "o"
+        </code></pre>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For in</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2>For in</h2>
+      <p>
+        O laço for...in interage sobre propriedades enumeradas de um objeto, na
+        ordem original de inserção. O laço pode ser executado para cada
+        propriedade distinta do objeto.
+      </p>
+      <p>Sintaxe:</p>
+      <pre><code>
+            for (variavel in objeto) {...
+            }
+        </code></pre>
+      <p>
+        variavel: Uma propriedade diferente do objeto é atribuida em cada
+        iteração
+      </p>
+      <p>Objeto: Objeto com as propriedades enumeradas.</p>
+    </div>
+    <div class="card2">
+      <pre><code>
+        // for...in
+
+        let person = {
+          name: 'John',
+          age: 30,
+          weight: 88.6
+        }
+
+        for(let property in person) {
+          console.log(property)
+          console.log(person[property])
+        }
+      </code></pre>
+      <pre><code>
+        // name
+        // John
+        // age
+        // 30
+        // weight
+        // 88.6
+      </code></pre>
+    </div>
+  </body>
+</html>
