@@ -29,7 +29,6 @@
     20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
     30px -30px 0 -3px var(--background), 30px -30px var(--orange),
     40px -40px 0 -3px var(--background), 40px -40px var(--red);
-
 }
 
 .card:hover {
@@ -111,11 +110,9 @@ body {
   color: var(--primary);
 }
 
-.card2 p {
+.card p {
   letter-spacing: 0.5px;
   margin-bottom: 15px;
-  font-size: 16px;
-
 }
 
 .card h2 {
@@ -130,6 +127,4 @@ body {
   margin-left: 20px;
 }
 
-code {font-size: 17px;}
-
-hr {border-top: 1.5px solid rgb(255, 255, 0)}
+code {font-size: 18px;}
